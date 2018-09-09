@@ -22,11 +22,8 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  counts = Hash.new(0)
-  array.each do |key, value|
-    p key: value.count
-  end
-
+  # counts = Hash.new(0)
+    array.keys.count {|k| k.to_s}
 end
 
 # names.each { |name| counts[name] += 1 }
