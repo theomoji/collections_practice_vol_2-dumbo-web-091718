@@ -23,7 +23,8 @@ end
 
 def count_elements(array)
   # counts = Hash.new(0)
-    array.each do {|key, value| "#{key}:#{value}"}
+    array.each do |key, value|
+      "#{key}:#{value}"
     end
 end
 
