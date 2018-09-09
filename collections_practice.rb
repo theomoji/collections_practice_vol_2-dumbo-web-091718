@@ -23,11 +23,10 @@ end
 
 
 def count_elements(array)
-  count = Hash.new(0)
-
+  count = Hash.new(0) # => {{"blake" => 2, "ashley" => 1}
   array.each do |hash|
     # hash[:name] # => "blake"
-    count[hash[:name]] += 1
+    count[hash[:name]] += 1 # {"blake" => 2, "ashley" => 1}
   end
   return count
 end
