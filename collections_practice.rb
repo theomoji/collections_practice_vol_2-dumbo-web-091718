@@ -21,8 +21,12 @@ def remove_non_strings(array)
   array.select {|item| item.is_a? String }
 end
 
+[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
+
 def count_elements(array)
-  
+  array.each do |hash|
+    
+  end
 end
 
 
