@@ -25,7 +25,6 @@ def count_elements(array)
   counted = Hash.new(0)
   array.each { |h| counted[h["count"]] += 1 }
   counted = Hash[counted.map {|k,v| [k,v.to_s] }]
-  end
 end
 
 
