@@ -21,5 +21,5 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-
-end 
+  array.count(array[0..-1])
+end
