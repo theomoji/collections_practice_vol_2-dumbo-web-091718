@@ -22,10 +22,10 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.each {|item| count[item] += 1}
+  array.each {|item| counts[item] += 1}
   
 end
 
-
+# names.each { |name| counts[name] += 1 }
 
 # to eq([{:name => "blake", :count => 2},
