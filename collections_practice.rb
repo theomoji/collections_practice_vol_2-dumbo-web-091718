@@ -9,6 +9,7 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
+
   array.select {|word| word.include?("a") }
 end
 
@@ -20,9 +21,19 @@ def remove_non_strings(array)
   array.select {|item| item.is_a? String }
 end
 
+
 def count_elements(array)
-  # array.each do |element|
-  #   array[element].count
-  # end
-  p array
+  count = Hash.new(0) # => {{"blake" => 2, "ashley" => 1}
+  array.each do |hash|
+    # hash[:name] # => "blake"
+    count[hash[:name]] += 1 # {"blake" => 2, "ashley" => 1}
+  end
+  return count
 end
+
+puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
+
+
+# names.each { |name| counts[name] += 1 }
+
+# to eq([{:name => "blake", :count => 2},
