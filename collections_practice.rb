@@ -24,7 +24,8 @@ end
 def count_elements(array)
   counts = Hash.new(0)
   array.each do |key, value|
-    
+    p key: value
+  end 
 
 end
 
