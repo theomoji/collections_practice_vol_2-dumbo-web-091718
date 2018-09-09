@@ -24,8 +24,9 @@ end
 [{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
 
 def count_elements(array)
+
   array.each do |hash|
-    
+    hash[:name] # => "blake"
   end
 end
 
