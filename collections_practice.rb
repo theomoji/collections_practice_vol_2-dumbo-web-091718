@@ -22,9 +22,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  counted = Hash.new(0)
-  array.each { |pair| counted[pair["count"]] += 1 }
-  counted = Hash[counted.map {|k,v| [k,v.to_s] }]
+  
 end
 
 
