@@ -23,8 +23,9 @@ end
 
 def count_elements(array)
   counts = Hash.new(0)
-  array.each {|key, value| counts < ""}
-  return counts
+  array.each do |key, value|
+    
+
 end
 
 # names.each { |name| counts[name] += 1 }
