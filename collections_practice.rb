@@ -23,7 +23,7 @@ end
 
 def count_elements(array)
   counts = Hash.new(0)
-  array.each {|item| counts << "count => item.count"}
+  array.each {|item| counts < "count => item.count"}
   return counts
 end
 
