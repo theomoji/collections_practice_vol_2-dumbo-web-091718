@@ -9,6 +9,7 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
+
   array.select {|word| word.include?("a") }
 end
 
@@ -21,8 +22,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  # array.each do |element|
-  #   array[element].count
-  # end
-  p array
+  array.each do |item|
+    item.count
+  end
 end
